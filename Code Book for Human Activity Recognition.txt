@@ -1,0 +1,203 @@
+Code book Human Activity Recognition Using Smartphones Data Set – Updated CM 04/26/2016
+
+Download: Data Folder, Data Set Description
+Abstract: Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
+
+Transformation and Aggregation
+
+	The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). Therefore the Voluteer id, Activity Id, Activitity labels, measurement(features) are all merged with raw data. Only mean and standard deviation measurements were selected and exported to mergeddata.txt file. In all it has 68 fields, of which 66 are measurements.
+
+	For the Tidy Data set the average of the measurements (Mean and Std columns only) obtained aggregating on Voluteer id and Activities. The measurement names were cleaned up a bit by removing and replacing  hyphen with underscore and also removing (). Also renamed to Mean and Std and Avg prefix added. Tidydata.txt is loaded.In all it has 68 fields, of which 66 are measurements.
+
+Meta data for the Merged Dataset
+
+Volunteer_ID   
+Activity_Name 
+tBodyAcc_Mean_X           
+tBodyAcc_Mean_Y          
+tBodyAcc_Mean_Z           
+tBodyAcc_Std_X           
+tBodyAcc_Std_Y            
+tBodyAcc_Std_Z           
+tGravityAcc_Mean_X        
+tGravityAcc_Mean_Y       
+tGravityAcc_Mean_Z        
+tGravityAcc_Std_X        
+tGravityAcc_Std_Y         
+tGravityAcc_Std_Z        
+tBodyAccJerk_Mean_X       
+tBodyAccJerk_Mean_Y      
+tBodyAccJerk_Mean_Z       
+tBodyAccJerk_Std_X       
+tBodyAccJerk_Std_Y        
+tBodyAccJerk_Std_Z       
+tBodyGyro_Mean_X          
+tBodyGyro_Mean_Y         
+tBodyGyro_Mean_Z          
+tBodyGyro_Std_X          
+tBodyGyro_Std_Y           
+tBodyGyro_Std_Z          
+tBodyGyroJerk_Mean_X      
+tBodyGyroJerk_Mean_Y     
+tBodyGyroJerk_Mean_Z      
+tBodyGyroJerk_Std_X      
+tBodyGyroJerk_Std_Y       
+tBodyGyroJerk_Std_Z      
+tBodyAccMag_Mean          
+tBodyAccMag_Std          
+tGravityAccMag_Mean       
+tGravityAccMag_Std       
+tBodyAccJerkMag_Mean      
+tBodyAccJerkMag_Std      
+tBodyGyroMag_Mean         
+tBodyGyroMag_Std         
+tBodyGyroJerkMag_Mean     
+tBodyGyroJerkMag_Std     
+fBodyAcc_Mean_X           
+fBodyAcc_Mean_Y          
+fBodyAcc_Mean_Z           
+fBodyAcc_Std_X           
+fBodyAcc_Std_Y            
+fBodyAcc_Std_Z           
+fBodyAccJerk_Mean_X       
+fBodyAccJerk_Mean_Y      
+fBodyAccJerk_Mean_Z       
+fBodyAccJerk_Std_X       
+fBodyAccJerk_Std_Y        
+fBodyAccJerk_Std_Z       
+fBodyGyro_Mean_X          
+fBodyGyro_Mean_Y         
+fBodyGyro_Mean_Z          
+fBodyGyro_Std_X          
+fBodyGyro_Std_Y           
+fBodyGyro_Std_Z          
+fBodyAccMag_Mean          
+fBodyAccMag_Std          
+fBodyBodyAccJerkMag_Mean  
+fBodyBodyAccJerkMag_Std  
+fBodyBodyGyroMag_Mean     
+fBodyBodyGyroMag_Std     
+fBodyBodyGyroJerkMag_Mean 
+fBodyBodyGyroJerkMag_Std 
+
+
+
+Meta Data for Tidy Dataset
+
+Volunteer_ID   
+Activity_Name                
+Avg_tBodyAcc_Mean_X           
+Avg_tBodyAcc_Mean_Y           
+Avg_tBodyAcc_Mean_Z          
+[6] Avg_tBodyAcc_Std_X            
+Avg_tBodyAcc_Std_Y            
+Avg_tBodyAcc_Std_Z            
+Avg_tGravityAcc_Mean_X       
+Avg_tGravityAcc_Mean_Y       
+[11] Avg_tGravityAcc_Mean_Z        
+Avg_tGravityAcc_Std_X         
+Avg_tGravityAcc_Std_Y         
+Avg_tGravityAcc_Std_Z         
+Avg_tBodyAccJerk_Mean_X      
+[16] Avg_tBodyAccJerk_Mean_Y       
+Avg_tBodyAccJerk_Mean_Z       
+Avg_tBodyAccJerk_Std_X        
+Avg_tBodyAccJerk_Std_Y        
+Avg_tBodyAccJerk_Std_Z       
+[21] Avg_tBodyGyro_Mean_X          
+Avg_tBodyGyro_Mean_Y          
+Avg_tBodyGyro_Mean_Z          
+Avg_tBodyGyro_Std_X           
+Avg_tBodyGyro_Std_Y          
+[26] Avg_tBodyGyro_Std_Z           
+Avg_tBodyGyroJerk_Mean_X      
+Avg_tBodyGyroJerk_Mean_Y      
+Avg_tBodyGyroJerk_Mean_Z      
+Avg_tBodyGyroJerk_Std_X      
+[31] Avg_tBodyGyroJerk_Std_Y       
+Avg_tBodyGyroJerk_Std_Z       
+Avg_tBodyAccMag_Mean          
+Avg_tBodyAccMag_Std           
+Avg_tGravityAccMag_Mean      
+[36] Avg_tGravityAccMag_Std
+Avg_tBodyAccJerkMag_Mean       
+Avg_tBodyAccJerkMag_Std       
+Avg_tBodyGyroMag_Mean         
+Avg_tBodyGyroMag_Std         
+[41] Avg_tBodyGyroJerkMag_Mean     
+Avg_tBodyGyroJerkMag_Std      
+Avg_fBodyAcc_Mean_X           
+Avg_fBodyAcc_Mean_Y           
+Avg_fBodyAcc_Mean_Z          
+[46] Avg_fBodyAcc_Std_X            
+Avg_fBodyAcc_Std_Y            
+Avg_fBodyAcc_Std_Z            
+Avg_fBodyAccJerk_Mean_X       
+Avg_fBodyAccJerk_Mean_Y      
+[51] Avg_fBodyAccJerk_Mean_Z     
+Avg_fBodyAccJerk_Std_X        
+Avg_fBodyAccJerk_Std_Y        
+Avg_fBodyAccJerk_Std_Z        
+Avg_fBodyGyro_Mean_X         
+[56] Avg_fBodyGyro_Mean_Y   
+Avg_fBodyGyro_Mean_Z          
+Avg_fBodyGyro_Std_X           
+Avg_fBodyGyro_Std_Y           
+Avg_fBodyGyro_Std_Z          
+[61] Avg_fBodyAccMag_Mean       
+Avg_fBodyAccMag_Std           
+Avg_fBodyBodyAccJerkMag_Mean  
+Avg_fBodyBodyAccJerkMag_Std   
+Avg_fBodyBodyGyroMag_Mean    
+[66] Avg_fBodyBodyGyroMag_Std      
+Avg_fBodyBodyGyroJerkMag_Mean 
+Avg_fBodyBodyGyroJerkMag_Std 
+
+	
+Data Set Characteristics:  	Multivariate, Time-Series	Number of Instances:	10299	Area:	Computer
+Attribute Characteristics:	N/A	Number of Attributes:	561	Date Donated	2012-12-10
+Associated Tasks:	Classification, Clustering	Missing Values?	N/A	Number of Web Hits:	284633
+
+
+
+Source:
+Jorge L. Reyes-Ortiz(1,2), Davide Anguita(1), Alessandro Ghio(1), Luca Oneto(1) and Xavier Parra(2)
+1 - Smartlab - Non-Linear Complex Systems Laboratory
+DITEN - Università degli Studi di Genova, Genoa (I-16145), Italy. 
+2 - CETpD - Technical Research Centre for Dependency Care and Autonomous Living
+Universitat Politècnica de Catalunya (BarcelonaTech). Vilanova i la Geltrú (08800), Spain
+activityrecognition '@' smartlab.ws
+
+Data Set Information:
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+
+Check the README.txt file for further details about this dataset. 
+
+A video of the experiment including an example of the 6 recorded activities with one of the participants can be seen in the following link: [Web Link]
+
+An updated version of this dataset can be found at [Web Link]. It includes labels of postural transitions between activities and also the full raw inertial signals instead of the ones pre-processed into windows.
+
+Attribute Information:
+For each record in the dataset it is provided: 
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+Relevant Papers:
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012 
+
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra, Jorge L. Reyes-Ortiz. Energy Efficient Smartphone-Based Activity Recognition using Fixed-Point Arithmetic. Journal of Universal Computer Science. Special Issue in Ambient Assisted Living: Home Care. Volume 19, Issue 9. May 2013
+
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. 4th International Workshop of Ambient Assited Living, IWAAL 2012, Vitoria-Gasteiz, Spain, December 3-5, 2012. Proceedings. Lecture Notes in Computer Science 2012, pp 216-223. 
+
+Jorge Luis Reyes-Ortiz, Alessandro Ghio, Xavier Parra-Llanas, Davide Anguita, Joan Cabestany, Andreu Català. Human Activity and Motion Disorder Recognition: Towards Smarter Interactive Cognitive Environments. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
+
+Citation Request:
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
+
+
+
